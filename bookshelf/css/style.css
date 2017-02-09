@@ -2,32 +2,39 @@ body {
 	padding: 0px;
 	margin: 0px;
 }
-.main-menu {
-	border: 1px solid blue;
-	padding: 15px;	
+.main-menu {	
+	padding: 15px;
+	height: 60px;	
+	background: #fcfcfc;
 }
 .menu-logo {
-	width: 75px;
-	height: 30px;
-	border: 1px solid orange;
+	width: 130px;
+	height: 35px;	
+	position: absolute;	
+	left: 10px;
+	background: url("../images/icon/BookShelfLogo.png") -10px -5px;
+	background-size: 150px 40px; 
 }
 .search-div {
-	border: 1px solid red;
+	border: 1px solid #eee;	
+	box-shadow: 1px 2px 2px #eee;
 	width: 600px;	
-	padding: 0px;
+	padding: 5px;
+	position: absolute;	
+	left: 165px;
 }
 .search-div > input[type=text] {
 	width: 550px;
-	height: 25px;
+	height: 28px;
 	border: 0px;
-	font-size: 1em;
-	border: 1px solid blue;
+	font-size: 1.1em;	
 }
 .search-div > input[type=submit] {
-	background: #0af;
+	background: url("../images/icon/book-search-green.png");
+	background-size: 40px 40px;
 	border: 0px;
-	height: 25px;
-	width: 50px;		
+	height: 40px;
+	width: 40px;		
 }
 
 @media screen and (max-width: 900px) and (min-width: 400px) {
