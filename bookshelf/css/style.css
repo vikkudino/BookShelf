@@ -133,6 +133,11 @@ a:visited {
 	background: url("../images/icon/bookshelf.png") 0px -15px no-repeat;
 	background-size: 200px 150px;	
 }
+.main-body {
+	width: 100%;
+	background: #fff;
+	height: 550px;
+}
 
 
 @media screen and (max-width: 900px) and (min-width: 400px) {
@@ -193,9 +198,9 @@ a:visited {
 	}
 
 	.main-search-div {
-		left: 5%;
+		left: 3%;
 		top: 250px;
-		width: 250px;
+		width: 90%;
 	}
 	.main-menu > .menu-button {
 		right: 0px;
