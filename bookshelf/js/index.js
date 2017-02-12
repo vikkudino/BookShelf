@@ -2,8 +2,13 @@ function searchBarUp(e) {
 	// body...	
 	var text = sBar.value.trim();
 	if(text.length > 0) {
-		MainBar = document.querySelectorAll(".main-search-div")[0];	
-		MainBar.className = "search-div";
+		MainBar = document.querySelectorAll(".main-search-div")[0];
+		if(MainBar) {
+			MainBar.className = "search-div";
+			document.querySelectorAll('.result-div')[0].style.display='block';
+			// todo : add filter things to it and then display it
+			//document.querySelectorAll('.filter-div')[0].style.display='block';
+		}		
 	}
 }
 var isMenuOpened = false;
@@ -40,7 +45,8 @@ function menuClose(argument) {
 }
 
 var sBar = document.querySelectorAll(".main-search-div > input[type=text]")[0];
-sBar.addEventListener('keyup',searchBarUp,false);
+if(sBar)
+	sBar.addEventListener('keyup',searchBarUp,false);
 
 var menuButton = document.querySelectorAll(".menu-button")[0];
 menuButton.addEventListener('click',menuOpen,false);
